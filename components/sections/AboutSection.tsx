@@ -123,21 +123,21 @@ export const AboutSection = () => {
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).style.display = "none";
                 }}
-                className="absolute inset-0 z-10 w-full h-full object-cover dark:grayscale transition-all duration-700"
+                className="absolute inset-0 z-10 w-full h-full object-cover grayscale transition-all duration-700"
               />
 
               {/* Text overlay on top of photo */}
               <div className="absolute inset-0 z-20 flex items-end p-8 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                 <div>
                   <p
-                    className="text-4xl font-bold text-zinc-900 dark:text-white mb-1"
+                    className="text-4xl font-bold text-white mb-1"
                     style={{ fontFamily: "'Playfair Display', serif" }}
                   >
                     More Than Just a Developer
                   </p>
-                  <p className="text-zinc-600 dark:text-zinc-400 text-sm">
+                  <p className="text-zinc-300 text-sm">
                     Exploring the intersection of .{" "}
-                    <code className="text-zinc-800 dark:text-zinc-300">technology, business logic, and everyday life adventures</code>
+                    <code className="text-zinc-200">technology, business logic, and everyday life adventures</code>
                   </p>
                 </div>
               </div>
