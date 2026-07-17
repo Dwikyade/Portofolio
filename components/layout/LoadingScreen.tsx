@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export const LoadingScreen = () => {
   const [progress, setProgress] = useState(0);
@@ -56,12 +57,14 @@ export const LoadingScreen = () => {
             transition={{ duration: 0.6, ease: [0.2, 0.65, 0.3, 0.9] }}
             className="mb-12"
           >
-            <span
-              className="text-7xl text-white"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              ⎎
-            </span>
+            <Image
+              src="/logo white.png"
+              alt="Logo"
+              width={80}
+              height={80}
+              className="object-contain"
+              priority
+            />
           </motion.div>
 
           {/* Progress bar */}
